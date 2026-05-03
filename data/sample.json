@@ -1,0 +1,20 @@
+[
+  {
+    "db_id": "example",
+    "schema": "CREATE TABLE users (id INT, name VARCHAR, age INT);\nCREATE TABLE orders (id INT, user_id INT, amount DECIMAL);",
+    "question": "Find all users who have placed orders with amount greater than 100",
+    "sql": "SELECT DISTINCT u.name FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 100"
+  },
+  {
+    "db_id": "example",
+    "schema": "CREATE TABLE employees (id INT, name VARCHAR, department VARCHAR, salary DECIMAL);",
+    "question": "What is the average salary by department?",
+    "sql": "SELECT department, AVG(salary) FROM employees GROUP BY department"
+  },
+  {
+    "db_id": "example",
+    "schema": "CREATE TABLE students (id INT, name VARCHAR, score INT);\nCREATE TABLE courses (id INT, name VARCHAR);",
+    "question": "Find students with scores above 90",
+    "sql": "SELECT name FROM students WHERE score > 90"
+  }
+]

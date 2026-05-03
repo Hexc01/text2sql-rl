@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+
+# Outputs
+outputs/
+checkpoints/
+*.pt
+*.bin
+*.safetensors
+
+# Data (large files)
+data/*.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+wandb/
+runs/
+*.log
