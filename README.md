@@ -37,4 +37,4 @@ python scripts/train.py --config configs/default.yaml
 
 ## 模型
 
-基础模型: Qwen2.5-Coder-1.5B (本地路径: ~/models/Qwen2.5-Coder-1.5B)
+基础模型: Qwen2.5-Coder-7B (本地路径: ~/models/Qwen2.5-Coder-7B)
